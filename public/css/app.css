@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css2?family=Domine&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap);
+html,
+body {
+  font-family: "Domine", serif !important;
+  color: white !important;
+  font-size: 1rem !important;
+  overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar {
+  background: #8400ff;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+header {
+  position: fixed;
+  z-index: 999;
+}
+header .nav-link:hover {
+  color: #8400ff !important;
+  transition: 200ms all !important;
+  font-weight: bold;
+}
+header .contact-btn {
+  background-color: #8400ff;
+  border-radius: 15px;
+  width: 100px;
+  text-align: center;
+}
+header .contact-btn:hover {
+  color: white !important;
+  transition: 200ms all;
+}
+
+.titles {
+  font-family: "Grand Hotel", cursive;
+  font-size: 3.5rem;
+  text-shadow: horizontal-offset vertical-offset blur color;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.slide .swiper-container {
+  width: 100%;
+  height: 600px;
+}
+.slide .swiper-pagination-bullet-active {
+  background: #8400ff !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.slide .swiper-slide:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6138830532) 0%, rgba(0, 0, 0, 0) 100%);
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+}
+.slide .swiper-slide .text-swiper {
+  z-index: 2;
+  font-family: "Grand Hotel", cursive;
+  font-size: 3.5rem;
+  text-shadow: horizontal-offset vertical-offset blur color;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-size: 5rem !important;
+  text-align: center;
+  color: #8400ff;
+  top: 50%;
+  line-height: 100%;
+  opacity: 0;
+  transition: opacity 200ms;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slide .swiper-slide .text-swiper:hover {
+  opacity: 1;
+  transition: 500ms all;
+  color: white;
+}
+
+.cards-purple .card-purple {
+  background: linear-gradient(198deg, #49008c 0%, #8400ff 64%, #9854d7 100%);
+  width: 350px;
+  border-radius: 15px;
+  height: 520px;
+}
+.cards-purple .card-purple .card-purple-image {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.cards-purple .card-purple .card-purple-header {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-shadow: horizontal-offset vertical-offset blur color;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.history .titles {
+  color: #8400ff;
+}
+.history p {
+  width: 90%;
+}
+
+.contact {
+  background-color: #8400ff;
+}
+
+.changeBg {
+  background-color: #212529 !important;
+  transition: 400ms all;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.changeBg2 {
+  background-color: transparent;
+  transition: 400ms all;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}

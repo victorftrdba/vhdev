@@ -1,0 +1,136 @@
+
+html,
+body {
+    @include body;
+    overflow-x:hidden !important;
+}
+
+::-webkit-scrollbar {
+    background:$purple;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $black;
+}
+
+header {
+    position:fixed;
+    z-index:999;
+    .nav-link:hover {
+    @include purple-effect;
+    }
+
+    .contact-btn {
+        @include purple-border;
+
+        &:hover {
+            color:$white !important;
+            transition:200ms all;
+        }
+    }
+}
+
+.titles {
+    @include titles;
+    @include text-shadow;
+}
+
+.slide {
+    .swiper-container {
+        width: 100%;
+        height: 600px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background:$purple !important;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    .swiper-slide {
+        &:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: rgb(0, 0, 0);
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6138830532212884) 0%, rgba(0, 0, 0, 0) 100%);
+                top: 0;
+                left: 0;
+                position: absolute;
+                z-index: 0;
+        }
+
+        .text-swiper {
+            z-index:2;
+            @include titles;
+            @include text-shadow;
+            cursor:pointer;
+            font-size:5rem !important;
+            text-align:center;
+            color:$purple;
+            top: 50%;
+            line-height:100%;
+            opacity:0;
+            transition: opacity 200ms;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &:hover {
+                opacity:1;
+                transition: 500ms all;
+                color:$white;
+            }
+        }
+    }
+}
+
+.cards-purple {
+    .card-purple {
+        @include card-purple;
+
+        .card-purple-image {
+            border-top-left-radius:15px;
+            border-top-right-radius:15px;
+        }
+
+        .card-purple-header {
+            @include fs-1;
+            @include text-shadow;
+        }
+    }
+}
+
+.history {
+    .titles {
+        color: $purple;
+    }
+
+    p {
+        width:90%;
+    }
+}
+
+.contact {
+    background-color: $purple;
+}
+
+.changeBg {
+    background-color:rgb(33,37,41) !important;
+    transition: 400ms all;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    position:fixed;
+    width:100%;
+    z-index:999;
+}
+
+.changeBg2 {
+    background-color:transparent;
+    transition: 400ms all;
+    position:fixed;
+    width:100%;
+    z-index:999;
+}

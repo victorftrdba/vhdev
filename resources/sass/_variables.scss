@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+$white: rgb(255, 255, 255);
+$purple: rgb(132, 0, 255);
+$black: rgb(0,0,0);
+
+@mixin body {
+    font-family: 'Domine', serif !important;
+    color: $white !important;
+    font-size: 1rem !important;
+}
+
+@mixin purple-effect {
+    color: $purple !important;
+    transition: 200ms all !important;
+    font-weight:bold;
+}
+
+@mixin text-shadow {
+    text-shadow: horizontal-offset vertical-offset blur color;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+@mixin purple-border {
+    background-color: $purple;
+    border-radius:15px;
+    width:100px;
+    text-align:center;
+}
+
+@mixin card-purple {
+    background: linear-gradient(198deg, rgba(73,0,140,1) 0%, rgba(132,0,255,1) 64%, rgba(152,84,215,1) 100%);
+    width:350px;
+    border-radius:15px;
+    height:520px;
+}
+
+@mixin fs-1 {
+    font-size:1.3rem;
+    font-weight:bold;
+}
+
+@mixin titles {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 3.5rem;
+}
