@@ -106,7 +106,7 @@
                 Um pouco sobre a experiência...
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mb-5">
             <div class="col-10">
                 <div class="row">
                     <div class="col-6">
