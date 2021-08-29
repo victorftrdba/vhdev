@@ -13,14 +13,16 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item px-2">
-                        <a class="nav-link text-white" href="#">Página Principal</a>
+                        <a class="nav-link text-white" href="{{ route('home.index') }}">Página Principal</a>
                         </li>
                         <li class="nav-item px-2">
-                        <a class="nav-link text-white" href="#">Projetos</a>
+                        <a class="nav-link text-white" href="{{ route('blog.index') }}">Blog</a>
                         </li>
+                        @if(Route::currentRouteName() == 'home.index')
                         <li class="nav-item px-2">
-                        <a class="nav-link contact-btn text-white" href="#">Contato</a>
+                        <a class="nav-link contact-btn text-white" href="#contact">Contato</a>
                         </li>
+                        @endif
                     </ul>
                     </div>
                 </div>

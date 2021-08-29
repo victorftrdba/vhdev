@@ -42,6 +42,11 @@ header .contact-btn:hover {
   transition: 200ms all;
 }
 
+.template-blog-index,
+.template-blog-show {
+  padding-top: 120px;
+}
+
 .titles {
   font-family: "Grand Hotel", cursive;
   font-size: 3.5rem;
